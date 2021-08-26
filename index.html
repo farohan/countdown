@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="countdown, clock, html, css, js">
+    <meta name="description" content="A countdown clock for your use">
+    <link rel="stylesheet" href="clock.css">
+    <title>Countdown Clock using HTML, CSS, and JS</title>
+</head>
+<body>
+    <div class="timer">
+        <div class="timer__controls">
+            <button title="30 seconds" data-time="30" class="timer__buttons">30 secs</button>
+            <button title="5 minutes" data-time="300" class="timer__buttons">5 min</button>
+            <button title="15 minutes" data-time="900" class="timer__buttons">15 min</button>
+            <button title="20 minutes" data-time="1200" class="timer__buttons">20 min</button>
+            <button title="60 minutes" data-time="3600" class="timer__buttons">Lunch Break</button>
+            <form name="customForm" id="custom">
+                <input type="text" name="minutes" placeholder="Enter minutes...">
+            </form>
+        </div>
+        <div class="display">
+            <h1 title="Countdown" class="display__time-left"></h1>
+            <p title="End time" class="display__end-time"></p>
+        </div>
+    </div>
+
+    <script src="count.js"></script>
+</body>
+</html>
